@@ -10,7 +10,7 @@
   <script type="text/babel">
     const root = document.getElementById("root");
 
-    function App() {
+    function MinuteToHourConverter() {
       const [amount, setAmount] = React.useState(0);
       const [flipped, setFlipped] = React.useState(false);
       const onChange = (event) => {
@@ -46,6 +46,9 @@
           <button onClick={onFlip}>Flip</button>
         </div>
       );
+    }
+    function App() {
+      return <MinuteToHourConverter />;
     }
     ReactDOM.render(<App />, root);
   </script>
